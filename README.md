@@ -17,6 +17,7 @@
 * can book rooms
 * can see the bookings of all the users
 * can add new hotels, rooms, room_type
+* can see html report of all bookings
 
 ### database diagram
 
