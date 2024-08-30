@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reservation Report</title>
+</head>
+<body>
+    <h1>Reservation Report</h1>
+    <ul>
+        {% for reservation in report_bookings %}
+            <li>Guest: {{ reservation.guest }}:<br> {{ reservation.room }} -  CheckIn: {{ reservation.check_in }}-  CheckOut: {{ reservation.check_out }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
