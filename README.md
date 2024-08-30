@@ -17,3 +17,7 @@
 * can book rooms
 * can see the bookings of all the users
 * can add new hotels, rooms, room_type
+
+### database diagram
+
+![Screenshot 2024-08-03 141739](https://github.com/sjdcsrezvani/Hotel_Listing_System_django/blob/da1015f2fb4bbaa65672ca92d7a55241a4e44dbb/Database%20ER%20diagram%20(crow's%20foot).jpeg)
