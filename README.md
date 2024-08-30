@@ -2,11 +2,17 @@
 
 #### my first backend project
 
-### Features For Normal Users
+### technologies used
+
+* postgresql
+* django
+* django rest framework
+
+### features for normal users
 * can book rooms , choose hotel and room type
 * if a room was occupied at certain time it can not be booked
 
-### Features For super User
+### features for super user
 
 * can book rooms
 * can see the bookings of all the users
