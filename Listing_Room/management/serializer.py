@@ -7,12 +7,6 @@ from django.utils import timezone
 from management.models import Hotel, RoomType, Room, Booking
 
 
-
-class AvailabilitySerializer(serializers.Serializer):
-    check_in = serializers.DateTimeField(
-        required=True, input_formats=["%Y-%m-%dT%H:%M", "%Y-%m-%dT%H:%M%Z"])
-    check_out = serializers.DateTimeField(
-        required=True, input_formats=["%Y-%m-%dT%H:%M", "%Y-%m-%dT%H:%M%Z"])
     
 
 class RoomWriteSerializer(WritableNestedModelSerializer):

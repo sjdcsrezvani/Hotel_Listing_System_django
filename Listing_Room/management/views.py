@@ -1,6 +1,6 @@
 from rest_framework import viewsets, status
 from rest_framework.response import Response
-from rest_framework.permissions import IsAdminUser
+from rest_framework.permissions import IsAdminUser, AllowAny
 from django.shortcuts import render
 
 from management.serializer import (
@@ -67,11 +67,10 @@ class BookingViewSet(viewsets.ModelViewSet):
         )
     write_serializer_class = BookingWriteSerializer
     read_serializer_class = BookingReadSerializer
+    permission_classes = [AllowAny]
     
     def get_queryset(self):
         queryset = super().get_queryset()
-        if not self.request.user.is_superuser:
-            queryset = queryset.filter(guest= self.request.user,)
         return queryset
     
     def get_serializer_class(self):
