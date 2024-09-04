@@ -69,9 +69,6 @@ class BookingViewSet(viewsets.ModelViewSet):
     read_serializer_class = BookingReadSerializer
     permission_classes = [AllowAny]
     
-    def get_queryset(self):
-        queryset = super().get_queryset()
-        return queryset
     
     def get_serializer_class(self):
         serializer_action_maping = {
