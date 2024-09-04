@@ -2,6 +2,8 @@
 
 #### my first backend project
 
+there was a bug in view.py , it is fixed now
+
 ### technologies used
 
 * postgresql
@@ -18,7 +20,6 @@
 * can see html report of all bookings
 * can add new hotels, rooms, room_type
 
-Availability Serializer is removable,i forgot to delete it
 
 create super user to add data to Room, Hotel and RoomType tables then use Booking API
 
